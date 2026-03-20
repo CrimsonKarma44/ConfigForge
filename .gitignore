@@ -1,24 +1,89 @@
-# Binaries
+# Go binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 configforge
+configforge-*
 bin/
+dist/
 
-# Dependency directories
+# Go dependency files
 vendor/
-node_modules/
+go.sum
+
+# Test and coverage
+coverage.out
+coverage.txt
+*.test
+*.prof
+
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+ENV/
+env/
 
-# Environment variables
+# Environment files
 .env
 .env.local
+.env.*.local
 
 # IDEs and editors
 .idea/
 .vscode/
 *.swp
 *.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ZED Editor
+.zed/
+ZED
+ZED.pub
 
 # OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
