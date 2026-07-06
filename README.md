@@ -2,6 +2,14 @@
 
 An agentic CLI tool for generating configuration files for different project types. Features a plugin system for extensibility and optional LLM-powered enhancement.
 
+## Motivation
+
+ConfigForge was created to empower developers who actually build—developers who understand their craft, not those who are entirely dependent on AI. The goal is simple: **eliminate boilerplate configuration overhead** so you can spend less time setting up and more time building.
+
+When you work across multiple languages and frameworks, you shouldn't have to mentally context-switch between different project structures, config formats, and best practices every single time. ConfigForge dispatches that cognitive load and lets you move from "new project" to "actually coding" in seconds. Whether you're spinning up a Go microservice, a Python CLI, or a Node.js package, the same familiar tool guides you through setup while respecting language-specific conventions.
+
+This is for developers who want to focus on what matters: the logic, the architecture, the solving of real problems—not remembering whether it's `pyproject.toml` or `setup.py`.
+
 ## Features
 
 - **Interactive CLI** - Prompts for configuration options
