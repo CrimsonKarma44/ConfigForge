@@ -17,7 +17,9 @@ This is for developers who want to focus on what matters: the logic, the archite
 - **Hybrid Mode** - Optional LLM enhancement for smarter configs
 - **Multi-stack Support** - Go, Python, Node.js, Rust, and more
 
-## Installation
+## Quick Start
+
+### Installation
 
 ```bash
 go install github.com/deus/configforge@latest
@@ -29,6 +31,21 @@ Or build from source:
 git clone https://github.com/deus/configforge.git
 cd configforge
 go build -o configforge ./cmd/main.go
+```
+
+### First Steps
+
+```bash
+# Interactive mode - guided setup
+configforge
+
+# List available plugins
+configforge --list
+
+# Generate a specific config
+configforge docker
+configforge python
+configforge go
 ```
 
 ## Usage
@@ -83,9 +100,11 @@ configforge --llm python
 | `go` | Go module config | go.mod |
 | `node` | Node.js package.json | package.json |
 
-## Plugin Development
+## Contributing
 
-### Plugin Interface
+### Plugin Development
+
+#### Plugin Interface
 
 ```go
 type ConfigPlugin interface {
@@ -99,7 +118,7 @@ type ConfigPlugin interface {
 }
 ```
 
-### Creating a Plugin
+#### Creating a Plugin
 
 1. Create a new file in `internal/plugin/`:
 
@@ -136,7 +155,7 @@ func (p *MyPlugin) Validate(content string) error {
 
 2. Register in loader.go
 
-## Configuration
+### Configuration
 
 Plugin discovery paths:
 - `./plugins` (project local)
